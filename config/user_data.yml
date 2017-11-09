@@ -1,0 +1,42 @@
+---
+# Must be 30 minutes ahead of current time
+# Format must be in military time. Ex: 8:00AM should be 0800
+entry_time:
+
+# Valid range is from 0.5 to 22.0
+# Must be in half hour increments. Ex: 0.5, 8.0, 21.5
+hours_of_parking:
+
+# Promo code (REQUIRED for now)
+promo_code:
+
+# Valid range is from 01 - 50.
+# For single digit spots (01 - 09), please use a leading zero
+# This list will run through the preferred parking spots in sequential
+# order, and if no preferred spots are available, then you will be assigned
+# the default spot (which is the first spot available from 50 on down)
+# I provided out a few examples, but please curate it to your liking
+preferred_parking_spots:
+- 50
+- 49
+
+# Valid values are Mr, Mrs, Ms, Dr, or Prof
+title:
+
+# Your first name
+first_name:
+
+# Your last name
+last_name:
+
+# Your zip code
+zip_code:
+
+# Your mobile number
+# Must be 10-digit format. Ex: 1234567890
+mobile_number:
+
+# Your email (reservation QR code will be emailed here)
+# Be extra careful here because it will be used to fill out
+# both email and confirmation email fields.
+email:
