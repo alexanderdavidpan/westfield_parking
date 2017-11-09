@@ -31,12 +31,12 @@ begin
     # Select entry time (must be at least 30 minutes ahead of current time)
     entry_time_dropdown = driver.find_element(:id, 'entry-time')
     option = Selenium::WebDriver::Support::Select.new(entry_time_dropdown)
-    option.select_by(:value, user_data['entry_time'])
+    option.select_by(:value, user_data['entry_time'].to_s)
 
     # Select hours of parking required
     hours_of_parking_dropdown = driver.find_element(:id, 'hours-required')
     option = Selenium::WebDriver::Support::Select.new(hours_of_parking_dropdown)
-    option.select_by(:value, user_data['hours_of_parking'])
+    option.select_by(:value, user_data['hours_of_parking'].to_s)
 
     # Click on 'Promo Code?' and enter promo code
     wait = Selenium::WebDriver::Wait.new(:timeout =>10) # seconds
