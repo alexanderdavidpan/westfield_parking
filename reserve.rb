@@ -109,6 +109,12 @@ begin
     confirm_email_input = driver.find_element(:id, 'email_confirm')
     confirm_email_input.send_keys(user_data['email'])
 
+    # Check display name checkbox to hide display name (specified in config)
+    if user_data['hide_name']
+      hide_name_checkbox = driver.find_element(:id, 'bay_hidename')
+      hide_name_checkbox.click
+    end
+
     # Check terms & conditions checkbox
     terms_and_conditions_checkbox = driver.find_element(:id, 'TCCheckbox')
     terms_and_conditions_checkbox.click

@@ -40,3 +40,7 @@ mobile_number:
 # Be extra careful here because it will be used to fill out
 # both email and confirmation email fields.
 email:
+
+# Boolean to determine if your name is displayed in parking spot
+# Valid values are true or false (default)
+hide_name:

@@ -2,7 +2,7 @@
 
 A selenium script to reserve parking at Westfield Century City (because I'm lazy).
 
-# Dependencies
+## Dependencies
 
 You will need to have Ruby installed. You will also need to install the chronic, pony, selenium-webdriver, and yaml gems to run the script.
 
@@ -21,7 +21,7 @@ Browser dependencies:
 
 * **Safari**: Coming soon...
 
-# Usage
+## Usage
 
 1. Clone the repository and navigate to project root directory.
 ```
