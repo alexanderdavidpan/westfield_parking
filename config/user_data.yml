@@ -1,4 +1,14 @@
 ---
+# Reservation day
+# This uses chronic (a natural language date parser) so
+# valid inputs can be 'today', 'tomorrow', 'next monday',
+# 'this tuesday 5:00', 'may 27th', etc.
+# You can also use 'dd/mm/yyyy'.
+# It just depends on chronic's limitations.
+# One caveat is that reservations can only be made 30
+# minutes in advance, so 'yesterday' will not work.
+day:
+
 # Must be 30 minutes ahead of current time
 # Format must be in military time. Ex: 8:00AM should be 0800
 entry_time:
