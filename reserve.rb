@@ -22,7 +22,7 @@ begin
     # Select entry month/year
     entry_month_year_dropdown = driver.find_element(:id, 'entry-month-year')
     option = Selenium::WebDriver::Support::Select.new(entry_month_year_dropdown)
-    option.select_by(:value, "#{month}#{year}")
+    option.select_by(:value, "#{sprintf('%02d', month)}#{year}")
 
     # Select entry day
     entry_day_dropdown = driver.find_element(:id, 'entry-day')
